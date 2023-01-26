@@ -13,6 +13,7 @@ nav
 {
 display:flex;
 justify-content: space-between;
+
 }
 header nav ul{
     margin-bottom: 80%;
@@ -25,6 +26,7 @@ header nav ul{
     padding: 0;
     display: flex;
     align-items: center;
+    width: fit-content;
 }
 header nav ul li{
     margin-right: 40px;
@@ -45,7 +47,7 @@ main {
 
 }
 .Video{
-    width: 600px;
+    width: 80%;
     display: block;
     margin: 20px auto;
 }
@@ -75,6 +77,7 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: rgb(245, 243, 243);
+    text-align: left;
     color: rgb(8, 8, 8);
     padding: 20px;
 }
@@ -97,10 +100,10 @@ footer ul li a i {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    background-color: #04ddb2;
+    /* background-color: #04ddb2; */
     margin: 10px;
     border-radius: 50%;
-    text-align: center;
+   align-items: baseline;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,4 +111,20 @@ footer ul li a i {
 
 footer ul li a .fa {
     line-height: 50px;
+    padding-top: 20px;
+}
+@media  screen and (max-width: 600px) 
+{
+    nav{
+        flex-direction: column;
+        padding-left: 0%;
+    }
+    .Video{
+        width: 80%;
+
+    }
+    footer{
+        flex-direction: column;
+    }
+   
 }
